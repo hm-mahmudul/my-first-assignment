@@ -1,4 +1,6 @@
-.font-inter {
+
+
+body{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
@@ -42,7 +44,7 @@ nav .menu a {
   color: #ffffff;
   font-weight: 600px;
   border: none;
-  /* margin: 24px 0; */
+  margin: 24px 0;
   padding: 12.5px 16px;
   border-radius: 4px;
   cursor: pointer;
@@ -81,14 +83,14 @@ nav .menu a {
   text-align: center;
 }
 .badge-circle {
-  width: 210px;
+  width: 229px;
   background: #ffffff;
   color: #469165;
   padding: 8px 12px;
   border-radius: 1000px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   margin: 0 auto;
 }
 
@@ -108,12 +110,11 @@ nav .menu a {
 .hero h1 {
   max-width: 770px;
   text-align: center;
-  /* border: 1px solid yellow; */
+  margin-top: 16px;
   margin: 0 auto;
   font-size: 72px;
   font-weight: bold;
   line-height: 84px;
-  /* text-transform: capitalize; */
 }
 
 .hero h1 span {
@@ -127,8 +128,36 @@ nav .menu a {
   margin-bottom: 32px;
 }
 
-.hero-buttons button {
-  margin-right: 16px;
+.hero-buttons {
+  max-width: 1365px;
+  padding: 0 447px;
+}
+
+.hero-buttons .hero-button-container {
+  max-width: 465px;
+  display: flex;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.hero-button-container .btn-primary {
+  max-width: 251px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 6px;
+}
+.hero-button-container .btn-secondary img {
+  width: 20px;
+  height: 20px;
+}
+
+.hero-button-container .btn-secondary {
+  max-width: 198px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 6px;
 }
 
 .note {
@@ -293,8 +322,63 @@ nav .menu a {
   margin: 0 auto;
 }
 
-.cta-container small{
+.cta-container small {
   color: #627382;
   line-height: 20px;
 }
 
+footer {
+  margin-top: 120px;
+  background-color: #001931;
+  padding: 120px 120px 164px 120px;
+}
+
+footer .footer-container {
+  width: 85%;
+  max-width: 1360px;
+  margin: 0 auto;
+  /* border: 1px solid yellow; */
+  display: flex;
+  gap: 790px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.footer-container .footer-logo {
+  max-width: 350px;
+}
+
+.footer-container .social {
+  max-width: 220px;
+}
+
+.social h4 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.social .social-icon {
+  max-width: 92px;
+}
+
+.social .social-icon img {
+  width: 20px;
+  height: 20px;
+  gap: 16px;
+}
+
+.break-line-footer{
+  border: none;
+  height: 1px;
+  background-color: #e5e7eb32;
+  width: 85%;
+  margin: 30px auto;
+}
+
+footer .copyright {
+  color: #fafafa;
+  text-align: center;
+}
